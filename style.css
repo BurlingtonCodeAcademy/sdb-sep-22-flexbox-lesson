@@ -1,0 +1,54 @@
+.main-container {
+    background-color: #bebebe;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-container {
+    /* Helps visualize the container */
+    border: 2px solid red;
+    height: 15em;
+
+    /* Initializes .nav-container as a parent container */
+    display: flex;
+
+    /* Handles direction alongside main-axis  */
+    flex-direction: row;
+
+    /* Changes the wrap of the flex-items based on size of the flex container */
+    flex-wrap: nowrap;
+
+    /* Aligns content against x or main axis */
+    justify-content: center;
+
+    /* Aligns items against the y or cross axis */
+    align-items: center;
+
+    /* Alongisde column-gap and row-gap allows us to set custom distance between flex items */
+    gap: 1em
+}
+
+#about {
+    /* Allows flex-item to be singled out with different flex styling. */
+    align-self: flex-end;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+}
+
+.form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+form.form input {
+    height: 1.5em;
+}
+
+form.form button {
+    height: 2em;
+}
